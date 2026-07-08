@@ -1,0 +1,17 @@
+# Environment variables (contains secrets, never commit this)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
