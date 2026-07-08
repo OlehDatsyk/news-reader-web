@@ -1,4 +1,4 @@
-# 📰 News Reader — V2 (Web)
+# 📰 News Reader - V2 (Web)
 
 A modern, responsive news reading web application built with **Flask**,
 **Python**, **HTML**, **CSS**, and **JavaScript**. It supports category
@@ -16,16 +16,16 @@ step in order and you will have the app running in your browser.
 1. [What This Project Does](#1-what-this-project-does)
 2. [Project Folder Structure](#2-project-folder-structure)
 3. [Prerequisites](#3-prerequisites)
-4. [Step 1 — Install Python](#step-1--install-python)
-5. [Step 2 — Install Git (Optional)](#step-2--install-git-optional)
-6. [Step 3 — Open the Project in VS Code](#step-3--open-the-project-in-vs-code)
-7. [Step 4 — Create a Virtual Environment](#step-4--create-a-virtual-environment)
-8. [Step 5 — Activate the Virtual Environment](#step-5--activate-the-virtual-environment)
-9. [Step 6 — Install Project Dependencies](#step-6--install-project-dependencies)
-10. [Step 7 — Get a Free NewsAPI Key](#step-7--get-a-free-newsapi-key)
-11. [Step 8 — Set Up the .env File](#step-8--set-up-the-env-file)
-12. [Step 9 — Run the Application](#step-9--run-the-application)
-13. [Step 10 — Using the App](#step-10--using-the-app)
+4. [Step 1 - Install Python](#step-1--install-python)
+5. [Step 2 - Install Git (Optional)](#step-2--install-git-optional)
+6. [Step 3 - Open the Project in VS Code](#step-3--open-the-project-in-vs-code)
+7. [Step 4 - Create a Virtual Environment](#step-4--create-a-virtual-environment)
+8. [Step 5 - Activate the Virtual Environment](#step-5--activate-the-virtual-environment)
+9. [Step 6 - Install Project Dependencies](#step-6--install-project-dependencies)
+10. [Step 7 - Get a Free NewsAPI Key](#step-7--get-a-free-newsapi-key)
+11. [Step 8 - Set Up the .env File](#step-8--set-up-the-env-file)
+12. [Step 9 - Run the Application](#step-9--run-the-application)
+13. [Step 10 - Using the App](#step-10--using-the-app)
 14. [Common Errors and Solutions](#11-common-errors-and-solutions)
 15. [Stopping the Server](#12-stopping-the-server)
 16. [Rebuilding / Running Again Later](#13-rebuilding--running-again-later)
@@ -35,7 +35,7 @@ step in order and you will have the app running in your browser.
 
 ## 1. What This Project Does
 
-News Reader — V2 is a single-page web app that:
+News Reader - V2 is a single-page web app that:
 
 - Fetches live news articles from **[NewsAPI.org](https://newsapi.org)**
   through a small Flask backend (so your API key stays private).
@@ -49,7 +49,7 @@ News Reader — V2 is a single-page web app that:
   source name, publication date, and an **"Read Article"** button that
   opens the original article in a new browser tab.
 - Includes a **Dark Mode** toggle that remembers your preference.
-- Is fully **responsive** — it works on desktop, tablet, and mobile
+- Is fully **responsive** - it works on desktop, tablet, and mobile
   screen sizes.
 
 ---
@@ -64,7 +64,7 @@ news-reader-app/
 ├── app.py                     # Flask backend (routes + NewsAPI proxy)
 ├── requirements.txt           # Python dependencies
 ├── .env.example                # Template for your environment variables
-├── .env                        # YOU create this — holds your real API key (not committed)
+├── .env                        # YOU create this - holds your real API key (not committed)
 ├── .gitignore                  # Tells Git which files to ignore
 ├── README.md                   # This file
 │
@@ -95,7 +95,7 @@ installed in the steps below.
 
 ---
 
-## Step 1 — Install Python
+## Step 1 - Install Python
 
 1. Open your web browser and go to **https://www.python.org/downloads/**.
 2. Click the yellow **"Download Python 3.x.x"** button (any version 3.10
@@ -103,13 +103,13 @@ installed in the steps below.
 3. Run the downloaded installer.
    - **Windows:** On the very first installer screen, make sure you
      **check the box that says "Add python.exe to PATH"** at the bottom
-     before clicking "Install Now". This step is critical — if you skip
+     before clicking "Install Now". This step is critical - if you skip
      it, your terminal won't recognize the `python` command.
-   - **macOS:** Run the `.pkg` installer and follow the prompts (Next →
-     Next → Install).
+   - **macOS:** Run the `.pkg` installer and follow the prompts (Next ->
+     Next -> Install).
 4. Verify the installation. Open **Visual Studio Code**, then open the
    built-in terminal:
-   - Menu bar → **Terminal** → **New Terminal**
+   - Menu bar -> **Terminal** -> **New Terminal**
    - Or use the shortcut: `` Ctrl + ` `` (Windows/Linux) or `` Cmd + ` ``
      (macOS)
 5. In the terminal, type:
@@ -132,7 +132,7 @@ installed in the steps below.
 
 ---
 
-## Step 2 — Install Git (Optional)
+## Step 2 - Install Git (Optional)
 
 Git is **not required** to run this project if you already have the
 project files on your computer (for example, downloaded as a ZIP folder).
@@ -152,31 +152,31 @@ If you want to install it anyway:
 
 ---
 
-## Step 3 — Open the Project in VS Code
+## Step 3 - Open the Project in VS Code
 
 1. Make sure all the project files (`app.py`, `templates/`, `static/`,
    etc.) are together inside one folder, e.g. `news-reader-app`.
 2. Open VS Code.
-3. Go to **File → Open Folder…** and select the `news-reader-app` folder.
+3. Go to **File -> Open Folder…** and select the `news-reader-app` folder.
 4. VS Code will reload with the project files visible in the **Explorer**
    panel on the left.
-5. Open a new terminal inside VS Code (**Terminal → New Terminal**). This
-   terminal automatically starts inside your project folder — you can
+5. Open a new terminal inside VS Code (**Terminal -> New Terminal**). This
+   terminal automatically starts inside your project folder - you can
    confirm this by typing:
 
    ```bash
-   pwd        # macOS/Linux — prints the current folder path
+   pwd        # macOS/Linux - prints the current folder path
    ```
 
    ```powershell
-   cd         # Windows PowerShell — prints the current folder path
+   cd         # Windows PowerShell - prints the current folder path
    ```
 
    The output should end with `.../news-reader-app`.
 
 ---
 
-## Step 4 — Create a Virtual Environment
+## Step 4 - Create a Virtual Environment
 
 A **virtual environment** is an isolated folder that keeps this
 project's Python packages separate from other projects on your computer.
@@ -202,12 +202,12 @@ now see it appear in the VS Code Explorer sidebar.
 
 ---
 
-## Step 5 — Activate the Virtual Environment
+## Step 5 - Activate the Virtual Environment
 
 You must **activate** the virtual environment every time you open a new
 terminal to work on this project.
 
-**Windows (PowerShell — default VS Code terminal):**
+**Windows (PowerShell - default VS Code terminal):**
 ```powershell
 venv\Scripts\Activate.ps1
 ```
@@ -244,12 +244,12 @@ or on macOS/Linux:
 
 You will repeat this activation step **every time** you open a new
 terminal window for this project. VS Code sometimes activates it
-automatically for you and prompts "Select Python Interpreter" — if it
+automatically for you and prompts "Select Python Interpreter" - if it
 does, choose the interpreter located inside `venv`.
 
 ---
 
-## Step 6 — Install Project Dependencies
+## Step 6 - Install Project Dependencies
 
 With the virtual environment **activated** (you see `(venv)` in the
 prompt), install all required Python packages listed in
@@ -273,13 +273,13 @@ Successfully installed Flask-3.0.3 Jinja2-3.1.4 ... requests-2.32.3 python-doten
 ```
 
 This installs:
-- **Flask** — the web framework that powers the backend.
-- **requests** — used by Flask to call the NewsAPI.org service.
-- **python-dotenv** — loads your secret API key from the `.env` file.
+- **Flask** - the web framework that powers the backend.
+- **requests** - used by Flask to call the NewsAPI.org service.
+- **python-dotenv** - loads your secret API key from the `.env` file.
 
 ---
 
-## Step 7 — Get a Free NewsAPI Key
+## Step 7 - Get a Free NewsAPI Key
 
 This app uses **NewsAPI.org** to fetch real news articles. You need a
 free API key:
@@ -291,7 +291,7 @@ free API key:
 4. After registering/logging in, you'll land on your account page at
    **https://newsapi.org/account**, where you'll see a long string of
    letters and numbers labeled **"API key"**.
-5. Copy that key — you'll paste it into the `.env` file in the next
+5. Copy that key - you'll paste it into the `.env` file in the next
    step.
 
 > 💡 The free "Developer" plan is enough to run and test this app
@@ -300,7 +300,7 @@ free API key:
 
 ---
 
-## Step 8 — Set Up the .env File
+## Step 8 - Set Up the .env File
 
 The `.env` file stores your secret API key so it never gets hard-coded
 into the source files.
@@ -308,8 +308,8 @@ into the source files.
 1. In the VS Code Explorer, find the file named **`.env.example`**.
 2. Make a copy of it and rename the copy to exactly **`.env`**
    (no `.example` at the end).
-   - Easiest way: right-click `.env.example` → **Copy**, then
-     right-click the folder → **Paste**, then rename the new file to
+   - Easiest way: right-click `.env.example` -> **Copy**, then
+     right-click the folder -> **Paste**, then rename the new file to
      `.env`.
    - Or use the terminal:
 
@@ -344,7 +344,7 @@ into the source files.
 
 ---
 
-## Step 9 — Run the Application
+## Step 9 - Run the Application
 
 With your virtual environment still **activated** (`(venv)` visible in
 the prompt) and your `.env` file set up, start the Flask server:
@@ -372,7 +372,7 @@ This means the server is running successfully.
 
 ---
 
-## Step 10 — Using the App
+## Step 10 - Using the App
 
 1. Open your web browser (Chrome, Firefox, Edge, etc.).
 2. Go to: **http://127.0.0.1:5000**
@@ -381,9 +381,9 @@ This means the server is running successfully.
 4. Try the features:
    - Click a **category pill** (Business, Sports, Technology, etc.) to
      filter news.
-   - Type into the **search bar** to search for any keyword — results
+   - Type into the **search bar** to search for any keyword - results
      update automatically after you stop typing.
-   - **Scroll down** — more articles load automatically at the bottom
+   - **Scroll down** - more articles load automatically at the bottom
      (infinite scroll).
    - Click the **🌙 / ☀️ icon** in the top-right corner to toggle
      **Dark Mode**.
@@ -399,13 +399,13 @@ This means the server is running successfully.
 | `'python' is not recognized as an internal or external command` | Python isn't installed or wasn't added to PATH | Reinstall Python and check **"Add python.exe to PATH"**, then restart VS Code |
 | `venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled` | Windows PowerShell execution policy blocks scripts | Run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`, then try activating again |
 | `ModuleNotFoundError: No module named 'flask'` | Dependencies weren't installed, or the virtual environment isn't activated | Activate the venv (Step 5), then run `pip install -r requirements.txt` again |
-| Browser shows `Server is missing a NEWS_API_KEY` | You didn't create `.env`, or it's still empty/placeholder text | Recheck Step 8 — make sure the file is named exactly `.env` and contains your real key |
+| Browser shows `Server is missing a NEWS_API_KEY` | You didn't create `.env`, or it's still empty/placeholder text | Recheck Step 8 - make sure the file is named exactly `.env` and contains your real key |
 | Browser shows `⚠️ apiKeyInvalid` or `401 Unauthorized` in the status banner | Wrong or expired NewsAPI key | Double-check you copied the full key correctly from https://newsapi.org/account |
 | Browser shows `⚠️ You have made too many requests` / `429` | The free NewsAPI plan has a limited number of requests per day | Wait for the quota to reset (usually 24 hours) or reduce how often you refresh/search |
 | Page loads but no articles appear and no error shows | Category returned zero results, or a network issue occurred | Try a different category or search term; check your internet connection |
 | `Address already in use` / `port 5000 is already in use` | Another program (or a previous run of this app) is already using port 5000 | Stop the other process, or run on a different port: edit the last line of `app.py` to `app.run(debug=True, port=5001)` and open `http://127.0.0.1:5001` instead |
 | Terminal shows `(venv)` disappeared after closing VS Code | Virtual environments must be reactivated per terminal session | Re-run the activation command from Step 5 every time you open a new terminal |
-| Images not loading on some cards | Some articles simply don't provide an image | This is expected — a placeholder image is shown automatically |
+| Images not loading on some cards | Some articles simply don't provide an image | This is expected - a placeholder image is shown automatically |
 | macOS: `command not found: python` | macOS often only ships `python3` | Use `python3` and `pip3` instead of `python` and `pip` throughout these instructions |
 
 ---
@@ -429,7 +429,7 @@ http://127.0.0.1:5000" message).
 Every time you come back to work on this project after closing VS Code:
 
 1. Open the project folder in VS Code.
-2. Open a terminal (**Terminal → New Terminal**).
+2. Open a terminal (**Terminal -> New Terminal**).
 3. **Activate** the virtual environment again (Step 5):
    - Windows: `venv\Scripts\Activate.ps1`
    - macOS/Linux: `source venv/bin/activate`
@@ -440,7 +440,7 @@ Every time you come back to work on this project after closing VS Code:
 5. Open **http://127.0.0.1:5000** in your browser.
 
 You do **not** need to reinstall dependencies (Step 6) or recreate the
-virtual environment (Step 4) again — those only happen once, unless you
+virtual environment (Step 4) again - those only happen once, unless you
 delete the `venv` folder.
 
 ---
