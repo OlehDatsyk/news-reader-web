@@ -61,23 +61,23 @@ Once everything is created, your project folder will look like this:
 ```
 news-reader-app/
 │
-├── app.py                     # Flask backend (routes + NewsAPI proxy)
-├── requirements.txt           # Python dependencies
-├── .env.example                # Template for your environment variables
-├── .env                        # YOU create this - holds your real API key (not committed)
-├── .gitignore                  # Tells Git which files to ignore
-├── README.md                   # This file
+├── app.py # Flask backend (routes + NewsAPI proxy)
+├── requirements.txt # Python dependencies
+├── .env.example # Template for your environment variables
+├── .env # YOU create this - holds your real API key (not committed)
+├── .gitignore # Tells Git which files to ignore
+├── README.md # This file
 │
 ├── templates/
-│   └── index.html               # Main HTML page (single-page app shell)
+│   └── index.html # Main HTML page (single-page app shell)
 │
 └── static/
     ├── css/
-    │   └── style.css             # All styling, including dark mode & responsiveness
+    │   └── style.css # All styling, including dark mode & responsiveness
     ├── js/
-    │   └── script.js             # Frontend logic: search, filters, infinite scroll
+    │   └── script.js # Frontend logic: search, filters, infinite scroll
     └── img/
-        └── placeholder.svg       # Fallback image for articles with no photo
+        └── placeholder.svg # Fallback image for articles with no photo
 ```
 
 ---
@@ -165,11 +165,11 @@ If you want to install it anyway:
    confirm this by typing:
 
    ```bash
-   pwd        # macOS/Linux - prints the current folder path
+   pwd # macOS/Linux - prints the current folder path
    ```
 
    ```powershell
-   cd         # Windows PowerShell - prints the current folder path
+   cd # Windows PowerShell - prints the current folder path
    ```
 
    The output should end with `.../news-reader-app`.

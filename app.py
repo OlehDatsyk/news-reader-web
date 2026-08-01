@@ -27,7 +27,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-NEWS_API_KEY = os.getenv("NEWS_API_KEY", "").strip()
+NEWS_API_KEY = os.getenv("NEWS_API_KEY", "61d4a06aeb9047449e6160da18fcaadd").strip()
 NEWS_API_BASE_URL = "https://newsapi.org/v2"
 
 # Categories supported by NewsAPI's "top-headlines" endpoint
