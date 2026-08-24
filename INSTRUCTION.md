@@ -119,7 +119,7 @@ Inside VS Code:
 1. Unzip the project folder (`news-reader-web`) somewhere easy to find, like
    your Desktop or Documents folder.
 2. Open VS Code.
-3. Go to **File -> Open Folder…** (macOS: **File -> Open…**).
+3. Go to **File -> Open Folder...** (macOS: **File -> Open...**).
 4. Select the `news-reader-web` folder and click **Select Folder** / **Open**.
 5. You should now see the file list on the left: `app.py`, `templates/`,
    `static/`, `requirements.txt`, etc.
@@ -241,7 +241,7 @@ python app.py
 
 You should see output similar to:
 ```
- * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:8000
 ```
 
 Leave this terminal window open - the app keeps running as long as this
@@ -252,9 +252,9 @@ process is active. Closing the terminal or pressing `Ctrl+C` stops the app.
 ## 13. Test That Everything Works
 
 1. Open your web browser.
-2. Go to: **http://127.0.0.1:5000**
+2. Go to: **http://127.0.0.1:8000**
 3. You should see the News Reader interface load with news article cards.
-4. As an extra check, visit **http://127.0.0.1:5000/health** - you should
+4. As an extra check, visit **http://127.0.0.1:8000/health** - you should
    see JSON like `{"status": "ok", "api_key_configured": true}`. If
    `api_key_configured` is `false`, your `.env` file isn't set up correctly
    - revisit Section 10.
@@ -310,7 +310,7 @@ for you automatically.
 | App loads but shows "Server is missing a NEWS_API_KEY" | `.env` file missing or empty | Redo Section 10 - make sure the file is named exactly `.env` |
 | App loads but articles fail with a provider error message | Invalid, expired, or rate-limited NewsAPI key | Get a fresh key at newsapi.org/account and update `.env` |
 | PowerShell won't let you activate the venv | Script execution is disabled | Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, then retry |
-| Port 5000 already in use | Another program (or a previous run) is using port 5000 | Close the other program, or edit the `port=5000` line in `app.py` to a free port like `5050` |
+| Port 8000 already in use | Another program (or a previous run) is using port 8000 | Close the other program, or edit the `port=8000` line in `app.py` to a free port like `5050` |
 | Changes to code don't show up in the browser | Old page is cached, or app wasn't restarted | Hard-refresh the browser (`Ctrl+Shift+R` / `Cmd+Shift+R`); restart `python app.py` |
 
 ---
@@ -357,7 +357,7 @@ public.
 - Editing `.env.example` instead of the new `.env` file.
 - Trying to open `index.html` directly by double-clicking it - this project
   **must** be run through `python app.py` and viewed via
-  `http://127.0.0.1:5000`, not by opening the HTML file directly.
+  `http://127.0.0.1:8000`, not by opening the HTML file directly.
 
 ---
 

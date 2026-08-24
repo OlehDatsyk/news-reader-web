@@ -1,17 +1,57 @@
-# Environment variables (contains secrets, never commit this)
-.env
-
-# Python
+# ---- Python ----
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Virtual Environments ----
 venv/
-env/
 .venv/
+env/
+ENV/
 
-# VS Code
-.vscode/
+# ---- Environment Variables ----
+.env
+.env.local
+*.env.backup
 
-# OS files
+# ---- Logs ----
+logs/
+*.log
+
+# ---- SQLite Database ----
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Uploaded Documents ----
+uploads/
+!uploads/.gitkeep
+
+# ---- Vector Database Data ----
+chroma_data/
+qdrant_data/
+*.index
+
+# ---- OS Files ----
 .DS_Store
 Thumbs.db
+
+# ---- IDE ----
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# ---- Testing ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Distribution / packaging ----
+*.egg

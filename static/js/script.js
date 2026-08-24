@@ -1,5 +1,5 @@
 /* =========================================================
-   News Reader — V2 — Frontend logic
+   News Reader - V2 - Frontend logic
    Handles: category filtering, keyword search, infinite
    scrolling, dark mode toggle, and rendering news cards.
    ========================================================= */

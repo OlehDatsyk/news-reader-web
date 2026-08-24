@@ -157,7 +157,7 @@ If you want to install it anyway:
 1. Make sure all the project files (`app.py`, `templates/`, `static/`,
    etc.) are together inside one folder, e.g. `news-reader-app`.
 2. Open VS Code.
-3. Go to **File -> Open Folder…** and select the `news-reader-app` folder.
+3. Go to **File -> Open Folder...** and select the `news-reader-app` folder.
 4. VS Code will reload with the project files visible in the **Explorer**
    panel on the left.
 5. Open a new terminal inside VS Code (**Terminal -> New Terminal**). This
@@ -361,7 +361,7 @@ You should see terminal output similar to:
  * Serving Flask app 'app.py'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment.
- * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:8000
 Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
@@ -375,7 +375,7 @@ This means the server is running successfully.
 ## Step 10 - Using the App
 
 1. Open your web browser (Chrome, Firefox, Edge, etc.).
-2. Go to: **http://127.0.0.1:5000**
+2. Go to: **http://127.0.0.1:8000**
 3. You should see the News Reader interface load with a grid of news
    cards.
 4. Try the features:
@@ -403,7 +403,7 @@ This means the server is running successfully.
 | Browser shows `⚠️ apiKeyInvalid` or `401 Unauthorized` in the status banner | Wrong or expired NewsAPI key | Double-check you copied the full key correctly from https://newsapi.org/account |
 | Browser shows `⚠️ You have made too many requests` / `429` | The free NewsAPI plan has a limited number of requests per day | Wait for the quota to reset (usually 24 hours) or reduce how often you refresh/search |
 | Page loads but no articles appear and no error shows | Category returned zero results, or a network issue occurred | Try a different category or search term; check your internet connection |
-| `Address already in use` / `port 5000 is already in use` | Another program (or a previous run of this app) is already using port 5000 | Stop the other process, or run on a different port: edit the last line of `app.py` to `app.run(debug=True, port=5001)` and open `http://127.0.0.1:5001` instead |
+| `Address already in use` / `port 8000 is already in use` | Another program (or a previous run of this app) is already using port 8000 | Stop the other process, or run on a different port: edit the last line of `app.py` to `app.run(debug=True, port=5001)` and open `http://127.0.0.1:5001` instead |
 | Terminal shows `(venv)` disappeared after closing VS Code | Virtual environments must be reactivated per terminal session | Re-run the activation command from Step 5 every time you open a new terminal |
 | Images not loading on some cards | Some articles simply don't provide an image | This is expected - a placeholder image is shown automatically |
 | macOS: `command not found: python` | macOS often only ships `python3` | Use `python3` and `pip3` instead of `python` and `pip` throughout these instructions |
@@ -420,7 +420,7 @@ CTRL + C
 ```
 
 You'll see the terminal prompt return to normal (no more "Running on
-http://127.0.0.1:5000" message).
+http://127.0.0.1:8000" message).
 
 ---
 
@@ -437,7 +437,7 @@ Every time you come back to work on this project after closing VS Code:
    ```bash
    python app.py
    ```
-5. Open **http://127.0.0.1:5000** in your browser.
+5. Open **http://127.0.0.1:8000** in your browser.
 
 You do **not** need to reinstall dependencies (Step 6) or recreate the
 virtual environment (Step 4) again - those only happen once, unless you

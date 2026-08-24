@@ -3,9 +3,9 @@ setlocal EnableExtensions EnableDelayedExpansion
 title News Reader - V2 (Web) - Startup
 cd /d "%~dp0"
 
-echo ============================================================
-echo   News Reader - V2 (Web) - Startup Script
-echo ============================================================
+echo =====================================================================
+echo   News Reader - V2 (Web) - Startup Script (Was made by Oleh Datsyk)
+echo =====================================================================
 echo.
 
 REM ------------------------------------------------------------------
@@ -108,7 +108,7 @@ REM 6. Launch the application
 REM ------------------------------------------------------------------
 echo [6/6] Starting News Reader...
 echo.
-echo   The app will run at:  http://127.0.0.1:5000
+echo   The app will run at:  http://127.0.0.1:8000
 echo   Keep this window open while using the app.
 echo   Press CTRL+C in this window to stop the server.
 echo.

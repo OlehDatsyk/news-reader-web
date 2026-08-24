@@ -1,5 +1,5 @@
 """
-News Reader — V2 (Web)
+News Reader - V2 (Web)
 =======================
 A Flask backend that powers a modern, responsive news reading web app.
 
@@ -8,7 +8,7 @@ It exposes a single JSON API endpoint (/api/news) that the frontend
 NewsAPI.org (https://newsapi.org). The backend acts as a small proxy so
 that the API key is never exposed to the browser.
 
-Author: Generated for "News Reader — V2 (Web)"
+Author: Generated for "News Reader - V2 (Web)"
 """
 
 import os
@@ -201,4 +201,4 @@ if __name__ == "__main__":
     # debug=True gives auto-reload and detailed error pages during
     # development. Turn this off (debug=False) before deploying anywhere
     # public.
-    app.run(debug=True, host="127.0.0.1", port=5000)
+    app.run(debug=True, host="127.0.0.1", port=8000)
